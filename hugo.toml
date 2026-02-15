@@ -1,0 +1,62 @@
+baseURL = 'https://lulu0217.github.io/'
+languageCode = 'en-us'
+title = 'Lu Zhang'
+theme = 'PaperMod'
+paginate = 5
+
+[params]
+  author = 'Lu Zhang'
+  description = 'Personal website of Lu Zhang — Researcher'
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Lu Zhang"
+    Content = "Researcher. Welcome to my personal page."
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/LuLu0217'
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'search'
+  name = 'Search'
+  url = '/search/'
+  weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
