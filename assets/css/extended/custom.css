@@ -1,0 +1,320 @@
+/* ===== Justified text ===== */
+.post-content p,
+.post-content li,
+.post-content div,
+.post-content .info-card,
+.post-content .pub-entry,
+.post-content .timeline-item {
+  text-align: justify;
+}
+
+/* ===== Color palette (professional blue accent) ===== */
+:root {
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --accent-bg: #eff6ff;
+  --green: #059669;
+  --green-bg: #ecfdf5;
+  --purple: #7c3aed;
+  --purple-bg: #f5f3ff;
+  --orange: #d97706;
+  --orange-bg: #fffbeb;
+  --teal: #0d9488;
+  --teal-bg: #f0fdfa;
+  --rose: #e11d48;
+  --rose-bg: #fff1f2;
+  --pink: #db2777;
+  --pink-bg: #fdf2f8;
+  --lightgreen: #16a34a;
+  --lightgreen-bg: #f0fdf4;
+  --gray-bg: #f8fafc;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --accent: #60a5fa;
+  --accent-light: #93bbfd;
+  --accent-bg: #1e293b;
+  --green: #34d399;
+  --green-bg: #1a2e2a;
+  --purple: #a78bfa;
+  --purple-bg: #1e1b2e;
+  --orange: #fbbf24;
+  --orange-bg: #2a2311;
+  --teal: #2dd4bf;
+  --teal-bg: #1a2c2a;
+  --rose: #fb7185;
+  --rose-bg: #2d1a1e;
+  --pink: #f472b6;
+  --pink-bg: #2d1a28;
+  --lightgreen: #4ade80;
+  --lightgreen-bg: #1a2e1e;
+  --gray-bg: #1e293b;
+  --border: #334155;
+}
+
+/* ===== Section headings with colored left border ===== */
+.post-content h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+/* ===== Colored info cards ===== */
+.info-card {
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  border-left: 4px solid;
+}
+
+.info-card-blue {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.info-card-green {
+  background: var(--green-bg);
+  border-color: var(--green);
+}
+
+.info-card-purple {
+  background: var(--purple-bg);
+  border-color: var(--purple);
+}
+
+.info-card-orange {
+  background: var(--orange-bg);
+  border-color: var(--orange);
+}
+
+.info-card-teal {
+  background: var(--teal-bg);
+  border-color: var(--teal);
+}
+
+.info-card-rose {
+  background: var(--rose-bg);
+  border-color: var(--rose);
+}
+
+.info-card-pink {
+  background: var(--pink-bg);
+  border-color: var(--pink);
+}
+
+.info-card-lightgreen {
+  background: var(--lightgreen-bg);
+  border-color: var(--lightgreen);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.info-card p,
+.info-card ul {
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+
+.info-card ul {
+  padding-left: 20px;
+}
+
+/* ===== Colored tags / badges ===== */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.badge-blue {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.badge-green {
+  background: var(--green-bg);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.badge-purple {
+  background: var(--purple-bg);
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.badge-orange {
+  background: var(--orange-bg);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.badge-teal {
+  background: var(--teal-bg);
+  color: var(--teal);
+  border: 1px solid var(--teal);
+}
+
+/* ===== Publication entry styling ===== */
+.pub-entry {
+  padding: 14px 18px;
+  margin: 10px 0;
+  background: var(--gray-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+  line-height: 1.6;
+}
+
+.pub-entry-conf {
+  border-left-color: var(--green);
+}
+
+.pub-entry-patent {
+  border-left-color: var(--purple);
+}
+
+.pub-entry-software {
+  border-left-color: var(--teal);
+}
+
+.pub-venue {
+  color: var(--orange);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.pub-award {
+  color: var(--rose);
+  font-weight: 700;
+}
+
+/* ===== Table styling ===== */
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-content thead th {
+  background: var(--accent);
+  color: white;
+  padding: 10px 14px;
+  text-align: left !important;
+  font-weight: 600;
+}
+
+.post-content tbody td {
+  text-align: left !important;
+}
+
+.post-content tbody td:not(:first-child) {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content tbody td:first-child {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content tbody tr:nth-child(even) {
+  background: var(--gray-bg);
+}
+
+.post-content tbody tr:hover {
+  background: var(--accent-bg);
+}
+
+/* ===== Timeline for experience ===== */
+.timeline-item {
+  position: relative;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 2px solid var(--border);
+  margin-left: 8px;
+}
+
+.timeline-item:last-child {
+  border-left: 2px solid transparent;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid white;
+}
+
+.timeline-date {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.timeline-title {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.timeline-subtitle {
+  font-size: 0.9em;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+/* ===== Horizontal rules ===== */
+.post-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), var(--purple), var(--teal));
+  margin: 2em 0;
+  border-radius: 2px;
+  opacity: 0.4;
+}
+
+/* ===== Homepage styling ===== */
+.first-entry .entry-header h2 {
+  font-size: 1.6em;
+}
+
+/* ===== Links ===== */
+.post-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  transition: border-bottom 0.2s;
+}
+
+.post-content a:hover {
+  border-bottom: 1px solid var(--accent);
+}
+
+/* ===== Smooth transitions ===== */
+.info-card,
+.pub-entry,
+.timeline-item,
+.post-content tbody tr {
+  transition: all 0.2s ease;
+}
+
+.pub-entry:hover {
+  transform: translateX(4px);
+}
