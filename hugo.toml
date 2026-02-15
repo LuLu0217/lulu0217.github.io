@@ -18,8 +18,8 @@ theme = 'PaperMod'
   ShowToc = true
 
   [params.homeInfoParams]
-    Title = "Hi, I'm Lu Zhang"
-    Content = "Researcher. Welcome to my personal page."
+    Title = "Welcome"
+    Content = "This site is under construction. Stay tuned!"
 
   [[params.socialIcons]]
     name = 'github'
