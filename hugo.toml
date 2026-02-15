@@ -18,12 +18,21 @@ theme = 'PaperMod'
   ShowToc = true
 
   [params.homeInfoParams]
-    Title = "Welcome"
-    Content = "This site is under construction. Stay tuned!"
+    Title = "Hi, I'm Lu Zhang"
+    Content = """Postdoctoral Researcher at [IRDL, UMR CNRS 6027](https://www.irdl.fr/), University of Brest, France.\n\n\
+My research focuses on AI & Deep Learning for time-series forecasting, fault diagnosis, digital twins, and prognostics of electrical systems and batteries."""
 
   [[params.socialIcons]]
     name = 'github'
     url = 'https://github.com/LuLu0217'
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:luzhang0216@gmail.com'
+
+  [[params.socialIcons]]
+    name = 'googlescholar'
+    url = 'https://scholar.google.com/citations?user=YOUR_ID'
 
 [params.cover]
   hidden = false
@@ -43,16 +52,22 @@ theme = 'PaperMod'
   weight = 20
 
 [[menu.main]]
+  identifier = 'publications'
+  name = 'Publications'
+  url = '/publications/'
+  weight = 30
+
+[[menu.main]]
   identifier = 'posts'
   name = 'Posts'
   url = '/posts/'
-  weight = 30
+  weight = 40
 
 [[menu.main]]
   identifier = 'search'
   name = 'Search'
   url = '/search/'
-  weight = 40
+  weight = 50
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
